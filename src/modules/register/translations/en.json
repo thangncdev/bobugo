@@ -1,0 +1,11 @@
+{
+  "sign_up": "Sign Up",
+  "already_account": "Already have account? Sign in",
+  "retype_password": "Retype password",
+  "retype_password_not_match": "Retype password does not match",
+  "minimum_8_characters": "Minimum 8 characters",
+  "at_least_one_letter": "At least one letter",
+  "at_least_one_digit": "At least one digit",
+  "at_least_one_special_character": "At least one special character",
+  "account_successfully_created": "Account successfully created"
+}

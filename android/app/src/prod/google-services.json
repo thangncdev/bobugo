@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "1088101961800",
+    "project_id": "bambooapp-xyz",
+    "storage_bucket": "bambooapp-xyz.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1088101961800:android:7f25e5bdda5e87f084c87d",
+        "android_client_info": {
+          "package_name": "com.bamboo.portfolio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1088101961800-hm58mmjck14dnb2e7bto24scnkpmkj30.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bamboo.portfolio",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "1088101961800-kvou4duee9s3464b2m8gho6u5ohmgasi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bamboo.portfolio",
+            "certificate_hash": "d908d41e22b23c087643fd32a470e971b201213c"
+          }
+        },
+        {
+          "client_id": "1088101961800-v1ojtn79mn1nvr44dha78ng3fsqmm0rm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGWw_e61yqUhWSi4L8ZbljUjO9_zS_GqY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1088101961800-v1ojtn79mn1nvr44dha78ng3fsqmm0rm.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1088101961800-rg97beimt7t4f8l7m9rtcrb130qaj2lt.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.bamboo.portfolio"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

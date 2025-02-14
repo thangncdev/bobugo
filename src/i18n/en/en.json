@@ -1,0 +1,28 @@
+{
+  "tabBar": {
+    "markets": "Markets",
+    "news": "News",
+    "watchlists": "Watchlists",
+    "alerts": "Alerts",
+    "portfolio": "Portfolio"
+  },
+  "yes": "Yes",
+  "no": "No",
+  "continue": "Continue",
+  "bamboo_app": "BAMBOO APP",
+  "news_ispo": "News/ISPO",
+  "website": "Website",
+  "contact_us": "Contact Us",
+  "terms_of_use": "Terms Of Use",
+  "privacy_policy": "Privacy Policy",
+  "settings": "Settings",
+  "field_required": "This field is required",
+  "terms_n_privacy": "Terms of Use  - Privacy Policy",
+  "send": "Send",
+  "return": "Return",
+  "close": "Close",
+  "no_data": "No data",
+  "dont_allow": "Don’t Allow",
+  "ok": "Ok",
+  "would_like": "Bamboo would like to Access the Camera"
+}

@@ -1,0 +1,20 @@
+{
+    "alerts_by": "Alert by Price",
+    "note": "NOTE",
+    "current_price": "Current Price",
+    "set_price": "Set Price Alert",
+    "search_coins": "Search Coins",
+    "search_nfts": "Search NFTs",
+    "add_price_alert": "Add Price Alert",
+    "price": "Price",
+    "listing": "Listing",
+    "follow_price": "Follow Price",
+    "get_recurring": "Get recurring alert",
+    "you_need_to": "You need to enter at least 1 field",
+    "you_have_reached_alerts": "You have reached your limit for receiving additional alerts. Please contact via email for help!",
+    "when_price": "When price is",
+    "price_invalid": "Price is invalid",
+    "want_delete_alert": "Are you sure you want to delete your alert?",
+    "no_alerts": "No alerts",
+    "tap_to_add_one": "Tap “+ Alerts” button to add one"
+}

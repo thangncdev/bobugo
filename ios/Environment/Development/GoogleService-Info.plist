@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>491687913552-uatppp7r5jfbk2c0ssv3n23s7j9mhviu.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.491687913552-uatppp7r5jfbk2c0ssv3n23s7j9mhviu</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>491687913552-npasj3jm66g4qj6686abqn32vqvm58g7.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAyAhnKzI7GxAIbU6JiSShlESt5v5TXXvU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>491687913552</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.bamboo.devportfolio</string>
+	<key>PROJECT_ID</key>
+	<string>bamboo-6e3b9</string>
+	<key>STORAGE_BUCKET</key>
+	<string>bamboo-6e3b9.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:491687913552:ios:6088c8a8e48658ae09c955</string>
+</dict>
+</plist>

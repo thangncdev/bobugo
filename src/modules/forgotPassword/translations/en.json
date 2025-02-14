@@ -1,0 +1,7 @@
+{
+  "enter_code": "Enter code",
+  "code_must_be_6": "The code must have at least 6 digits",
+  "forgot_password_guide": "Enter your email address below to receive",
+  "forgot_password_guide_highlight": "instructions for resetting your password",
+  "forgot_password_success": "Your password is now available successful change"
+}

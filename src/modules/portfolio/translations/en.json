@@ -1,0 +1,15 @@
+{
+  "address": "Address",
+  "you_have_reached_address": "You have reached your limit for additional wallet addresses. Please contact via email for help!",
+  "add_address": "Add Address",
+  "scan_qr_code": "Scan QR-Code",
+  "no_address": "No Address",
+  "tap_to_add_address": "Tap “+ Address” button to add one",
+  "enter_your_wallet_address": "Enter your Wallet Address",
+  "wallet_address": "Wallet Address",
+  "name": "Name",
+  "wallet_invalid": "Wallet address is invalid",
+  "want_delete_portfolio": "Are you sure you want to delete your wallet?",
+  "others": "Others",
+  "no_assets_found": "No assets found"
+}

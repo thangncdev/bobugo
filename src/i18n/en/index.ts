@@ -1,0 +1,18 @@
+export default {
+    ...require('./en.json'),
+    ...require('modules/user/translations/en.json'),
+    ...require('modules/login/translations/en.json'),
+    ...require('modules/onboarding/translations/en.json'),
+    ...require('modules/markets/translations/en.json'),
+    ...require('modules/register/translations/en.json'),
+    ...require('modules/forgotPassword/translations/en.json'),
+    ...require('modules/verification/translations/en.json'),
+    ...require('modules/tokenDetail/translations/en.json'),
+    ...require('modules/changePassword/translations/en.json'),
+    ...require('modules/settings/translations/en.json'),
+    ...require('modules/news/translations/en.json'),
+    ...require('modules/alerts/translations/en.json'),
+    ...require('modules/alertsSetting/translations/en.json'),
+    ...require('modules/walletDetail/translations/en.json'),
+    ...require('modules/portfolio/translations/en.json'),
+};

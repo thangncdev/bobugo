@@ -1,0 +1,10 @@
+{
+  "profile": "Profile",
+  "sign_out": "Sign Out",
+  "change_password": "Change password",
+  "delete_profile": "Delete profile",
+  "logout_successfully": "Logout successfully",
+  "want_delete_proflie": "Are you sure you want to delete your profile?",
+  "change_pass_success": "Change password successfully",
+  "delete_profile_success": "Delete profile successfully"
+}

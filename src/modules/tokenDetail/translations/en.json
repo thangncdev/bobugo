@@ -1,0 +1,8 @@
+{
+    "overview": "Overview",
+    "pool_info": "Pool info",
+    "interval": "Interval",
+    "empty_news": "News is empty",
+    "news_uri_empty": "Can't get news link",
+    "get_news_uri_fail": "Get news link failure"
+}

@@ -1,0 +1,1271 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0AA64D282BF65CE500DB4199 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AA64D272BF65CE000DB4199 /* GoogleService-Info.plist */; };
+		0AC368E22BAADD9300DD06BD /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
+		0AC368E32BAADD9300DD06BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		0AC368E72BAADD9300DD06BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		0AC368E82BAADD9300DD06BD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		0AC368EA2BAADD9300DD06BD /* BeVietnamPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 51AE4413BF0249E1BD1718E1 /* BeVietnamPro-Bold.ttf */; };
+		0AC368EB2BAADD9300DD06BD /* BeVietnamPro-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 215C99362110459086D173DD /* BeVietnamPro-ExtraBold.ttf */; };
+		0AC368EE2BAADD9300DD06BD /* BeVietnamPro-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 698F31B1935740B59BA6EB92 /* BeVietnamPro-Medium.ttf */; };
+		0AC368EF2BAADD9300DD06BD /* BeVietnamPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04A48B94B88D4DF79FF05448 /* BeVietnamPro-Regular.ttf */; };
+		0AC368F02BAADD9300DD06BD /* BeVietnamPro-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5F8FD7063BF45738204F59C /* BeVietnamPro-SemiBold.ttf */; };
+		0AF81D992BD0477400215703 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AF81D982BD0474000215703 /* GoogleService-Info.plist */; };
+		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
+		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		4CFEAEE2A5EC47DA9D92C0DF /* BeVietnamPro-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 215C99362110459086D173DD /* BeVietnamPro-ExtraBold.ttf */; };
+		5B69036F37888608CC4E80C2 /* Pods_shared_pods_Bamboo_Prod.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EC3382ABFC7B95F1E9F1322 /* Pods_shared_pods_Bamboo_Prod.framework */; };
+		5DB88E3A83B54695B08941FF /* BeVietnamPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 51AE4413BF0249E1BD1718E1 /* BeVietnamPro-Bold.ttf */; };
+		68B36B8056ADCB2BBE2264C8 /* Pods_ImageNotification.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9378C7E9574CC22A5AD60F /* Pods_ImageNotification.framework */; };
+		7FDE6E1030EC711058F24808 /* Pods_shared_pods_Bamboo_Dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E781D76DB542933A9EEC3BB /* Pods_shared_pods_Bamboo_Dev.framework */; };
+		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		8F9327E62BF77745004F0A60 /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9327E52BF77745004F0A60 /* NotificationService.m */; };
+		8F9327EA2BF77745004F0A60 /* ImageNotificationProduct.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8F9327E22BF77745004F0A60 /* ImageNotificationProduct.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8FAE87212BD4CD9800A236C8 /* bamboo_sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8FAE87202BD4CD9800A236C8 /* bamboo_sound.wav */; };
+		8FAE87222BD4CD9800A236C8 /* bamboo_sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8FAE87202BD4CD9800A236C8 /* bamboo_sound.wav */; };
+		8FAE87232BD4CD9800A236C8 /* bamboo_sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8FAE87202BD4CD9800A236C8 /* bamboo_sound.wav */; };
+		8FD3F70D2BD3D80200218A24 /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD3F70C2BD3D80200218A24 /* NotificationService.m */; };
+		8FD3F7112BD3D80200218A24 /* ImageNotification.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8FD3F7092BD3D80200218A24 /* ImageNotification.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A7E685C34AF349019AE1FEF6 /* BeVietnamPro-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5F8FD7063BF45738204F59C /* BeVietnamPro-SemiBold.ttf */; };
+		E33B06D26E301FF10807BF41 /* Pods_ImageNotificationProduct.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0845C674C2D3A6FE9689BCB2 /* Pods_ImageNotificationProduct.framework */; };
+		E49BB15DC29F4FBDAA12A912 /* BeVietnamPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04A48B94B88D4DF79FF05448 /* BeVietnamPro-Regular.ttf */; };
+		F1A178645ACB4451A0B7346A /* BeVietnamPro-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 698F31B1935740B59BA6EB92 /* BeVietnamPro-Medium.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8F9327E82BF77745004F0A60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F9327E12BF77745004F0A60;
+			remoteInfo = ImageNotificationProduct;
+		};
+		8FD3F70F2BD3D80200218A24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FD3F7082BD3D80200218A24;
+			remoteInfo = ImageNotification;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8F9327EB2BF77745004F0A60 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8F9327EA2BF77745004F0A60 /* ImageNotificationProduct.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FC825AB2BD2D88B00E4D2A8 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8FD3F7112BD3D80200218A24 /* ImageNotification.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		04A48B94B88D4DF79FF05448 /* BeVietnamPro-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "BeVietnamPro-Regular.ttf"; path = "../src/assets/fonts/BeVietnamPro-Regular.ttf"; sourceTree = "<group>"; };
+		0845C674C2D3A6FE9689BCB2 /* Pods_ImageNotificationProduct.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageNotificationProduct.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AA64D272BF65CE000DB4199 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0AC368F82BAADD9300DD06BD /* Bamboo Prod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bamboo Prod.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AC368FD2BAADE5B00DD06BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AC368FE2BAADE6200DD06BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AF81D972BD0258800215703 /* Bamboo Dev.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = "Bamboo Dev.entitlements"; path = "Bamboo/Bamboo Dev.entitlements"; sourceTree = "<group>"; };
+		0AF81D982BD0474000215703 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* Bamboo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bamboo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Bamboo/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = Bamboo/AppDelegate.mm; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Bamboo/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Bamboo/main.m; sourceTree = "<group>"; };
+		215C99362110459086D173DD /* BeVietnamPro-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "BeVietnamPro-ExtraBold.ttf"; path = "../src/assets/fonts/BeVietnamPro-ExtraBold.ttf"; sourceTree = "<group>"; };
+		2E781D76DB542933A9EEC3BB /* Pods_shared_pods_Bamboo_Dev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_shared_pods_Bamboo_Dev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EC3382ABFC7B95F1E9F1322 /* Pods_shared_pods_Bamboo_Prod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_shared_pods_Bamboo_Prod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51AE4413BF0249E1BD1718E1 /* BeVietnamPro-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "BeVietnamPro-Bold.ttf"; path = "../src/assets/fonts/BeVietnamPro-Bold.ttf"; sourceTree = "<group>"; };
+		698F31B1935740B59BA6EB92 /* BeVietnamPro-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "BeVietnamPro-Medium.ttf"; path = "../src/assets/fonts/BeVietnamPro-Medium.ttf"; sourceTree = "<group>"; };
+		756FA5B28E19C69E4CF7E864 /* Pods-shared_pods-Bamboo Prod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shared_pods-Bamboo Prod.debug.xcconfig"; path = "Target Support Files/Pods-shared_pods-Bamboo Prod/Pods-shared_pods-Bamboo Prod.debug.xcconfig"; sourceTree = "<group>"; };
+		79472047F4ECF1A620052E38 /* Pods-shared_pods-Bamboo Dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shared_pods-Bamboo Dev.release.xcconfig"; path = "Target Support Files/Pods-shared_pods-Bamboo Dev/Pods-shared_pods-Bamboo Dev.release.xcconfig"; sourceTree = "<group>"; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Bamboo/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8DAD52A42A145636C1A0D563 /* Pods-ImageNotificationProduct.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageNotificationProduct.release.xcconfig"; path = "Target Support Files/Pods-ImageNotificationProduct/Pods-ImageNotificationProduct.release.xcconfig"; sourceTree = "<group>"; };
+		8F9327E22BF77745004F0A60 /* ImageNotificationProduct.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ImageNotificationProduct.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F9327E42BF77745004F0A60 /* NotificationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationService.h; sourceTree = "<group>"; };
+		8F9327E52BF77745004F0A60 /* NotificationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationService.m; sourceTree = "<group>"; };
+		8F9327E72BF77745004F0A60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FAE87202BD4CD9800A236C8 /* bamboo_sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bamboo_sound.wav; sourceTree = "<group>"; };
+		8FC8259D2BD2CD8C00E4D2A8 /* Bamboo Prod.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = "Bamboo Prod.entitlements"; path = "Bamboo/Bamboo Prod.entitlements"; sourceTree = "<group>"; };
+		8FD3F7092BD3D80200218A24 /* ImageNotification.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ImageNotification.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FD3F70B2BD3D80200218A24 /* NotificationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationService.h; sourceTree = "<group>"; };
+		8FD3F70C2BD3D80200218A24 /* NotificationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationService.m; sourceTree = "<group>"; };
+		8FD3F70E2BD3D80200218A24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DF885C5F5343DD7D550D97F /* Pods-shared_pods-Bamboo Dev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shared_pods-Bamboo Dev.debug.xcconfig"; path = "Target Support Files/Pods-shared_pods-Bamboo Dev/Pods-shared_pods-Bamboo Dev.debug.xcconfig"; sourceTree = "<group>"; };
+		B5F8FD7063BF45738204F59C /* BeVietnamPro-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "BeVietnamPro-SemiBold.ttf"; path = "../src/assets/fonts/BeVietnamPro-SemiBold.ttf"; sourceTree = "<group>"; };
+		C5A53A10351A916A01907298 /* Pods-ImageNotificationProduct.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageNotificationProduct.debug.xcconfig"; path = "Target Support Files/Pods-ImageNotificationProduct/Pods-ImageNotificationProduct.debug.xcconfig"; sourceTree = "<group>"; };
+		C83169F2F3C6990D7B545B0B /* Pods-ImageNotification.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageNotification.debug.xcconfig"; path = "Target Support Files/Pods-ImageNotification/Pods-ImageNotification.debug.xcconfig"; sourceTree = "<group>"; };
+		CC0563E26F993E377D7BC706 /* Pods-shared_pods-Bamboo Prod.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shared_pods-Bamboo Prod.release.xcconfig"; path = "Target Support Files/Pods-shared_pods-Bamboo Prod/Pods-shared_pods-Bamboo Prod.release.xcconfig"; sourceTree = "<group>"; };
+		D78F47A1B0D0F7F062658678 /* Pods-ImageNotification.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageNotification.release.xcconfig"; path = "Target Support Files/Pods-ImageNotification/Pods-ImageNotification.release.xcconfig"; sourceTree = "<group>"; };
+		DF9378C7E9574CC22A5AD60F /* Pods_ImageNotification.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageNotification.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0AC368E42BAADD9300DD06BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B69036F37888608CC4E80C2 /* Pods_shared_pods_Bamboo_Prod.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FDE6E1030EC711058F24808 /* Pods_shared_pods_Bamboo_Dev.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F9327DF2BF77745004F0A60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E33B06D26E301FF10807BF41 /* Pods_ImageNotificationProduct.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FD3F7062BD3D80200218A24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68B36B8056ADCB2BBE2264C8 /* Pods_ImageNotification.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0AC368FA2BAADDFB00DD06BD /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				0AC368FC2BAADE0A00DD06BD /* Production */,
+				0AC368FB2BAADE0400DD06BD /* Development */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
+		0AC368FB2BAADE0400DD06BD /* Development */ = {
+			isa = PBXGroup;
+			children = (
+				0AF81D982BD0474000215703 /* GoogleService-Info.plist */,
+				0AC368FD2BAADE5B00DD06BD /* Info.plist */,
+			);
+			path = Development;
+			sourceTree = "<group>";
+		};
+		0AC368FC2BAADE0A00DD06BD /* Production */ = {
+			isa = PBXGroup;
+			children = (
+				0AA64D272BF65CE000DB4199 /* GoogleService-Info.plist */,
+				0AC368FE2BAADE6200DD06BD /* Info.plist */,
+			);
+			path = Production;
+			sourceTree = "<group>";
+		};
+		13B07FAE1A68108700A75B9A /* Bamboo */ = {
+			isa = PBXGroup;
+			children = (
+				0AF81D972BD0258800215703 /* Bamboo Dev.entitlements */,
+				8FC8259D2BD2CD8C00E4D2A8 /* Bamboo Prod.entitlements */,
+				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
+				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
+				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
+				13B07FB71A68108700A75B9A /* main.m */,
+			);
+			name = Bamboo;
+			sourceTree = "<group>";
+		};
+		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
+				3EC3382ABFC7B95F1E9F1322 /* Pods_shared_pods_Bamboo_Prod.framework */,
+				2E781D76DB542933A9EEC3BB /* Pods_shared_pods_Bamboo_Dev.framework */,
+				DF9378C7E9574CC22A5AD60F /* Pods_ImageNotification.framework */,
+				0845C674C2D3A6FE9689BCB2 /* Pods_ImageNotificationProduct.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		37F807D31AE14F3592C85DEB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				51AE4413BF0249E1BD1718E1 /* BeVietnamPro-Bold.ttf */,
+				215C99362110459086D173DD /* BeVietnamPro-ExtraBold.ttf */,
+				698F31B1935740B59BA6EB92 /* BeVietnamPro-Medium.ttf */,
+				04A48B94B88D4DF79FF05448 /* BeVietnamPro-Regular.ttf */,
+				B5F8FD7063BF45738204F59C /* BeVietnamPro-SemiBold.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		83CBB9F61A601CBA00E9B192 = {
+			isa = PBXGroup;
+			children = (
+				8FAE87202BD4CD9800A236C8 /* bamboo_sound.wav */,
+				0AC368FA2BAADDFB00DD06BD /* Environment */,
+				13B07FAE1A68108700A75B9A /* Bamboo */,
+				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				8FD3F70A2BD3D80200218A24 /* ImageNotification */,
+				8F9327E32BF77745004F0A60 /* ImageNotificationProduct */,
+				83CBBA001A601CBA00E9B192 /* Products */,
+				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				37F807D31AE14F3592C85DEB /* Resources */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
+		};
+		83CBBA001A601CBA00E9B192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13B07F961A680F5B00A75B9A /* Bamboo.app */,
+				0AC368F82BAADD9300DD06BD /* Bamboo Prod.app */,
+				8FD3F7092BD3D80200218A24 /* ImageNotification.appex */,
+				8F9327E22BF77745004F0A60 /* ImageNotificationProduct.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8F9327E32BF77745004F0A60 /* ImageNotificationProduct */ = {
+			isa = PBXGroup;
+			children = (
+				8F9327E42BF77745004F0A60 /* NotificationService.h */,
+				8F9327E52BF77745004F0A60 /* NotificationService.m */,
+				8F9327E72BF77745004F0A60 /* Info.plist */,
+			);
+			path = ImageNotificationProduct;
+			sourceTree = "<group>";
+		};
+		8FD3F70A2BD3D80200218A24 /* ImageNotification */ = {
+			isa = PBXGroup;
+			children = (
+				8FD3F70B2BD3D80200218A24 /* NotificationService.h */,
+				8FD3F70C2BD3D80200218A24 /* NotificationService.m */,
+				8FD3F70E2BD3D80200218A24 /* Info.plist */,
+			);
+			path = ImageNotification;
+			sourceTree = "<group>";
+		};
+		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				79472047F4ECF1A620052E38 /* Pods-shared_pods-Bamboo Dev.release.xcconfig */,
+				CC0563E26F993E377D7BC706 /* Pods-shared_pods-Bamboo Prod.release.xcconfig */,
+				9DF885C5F5343DD7D550D97F /* Pods-shared_pods-Bamboo Dev.debug.xcconfig */,
+				756FA5B28E19C69E4CF7E864 /* Pods-shared_pods-Bamboo Prod.debug.xcconfig */,
+				C83169F2F3C6990D7B545B0B /* Pods-ImageNotification.debug.xcconfig */,
+				D78F47A1B0D0F7F062658678 /* Pods-ImageNotification.release.xcconfig */,
+				C5A53A10351A916A01907298 /* Pods-ImageNotificationProduct.debug.xcconfig */,
+				8DAD52A42A145636C1A0D563 /* Pods-ImageNotificationProduct.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0AC368DF2BAADD9300DD06BD /* Bamboo Prod */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AC368F52BAADD9300DD06BD /* Build configuration list for PBXNativeTarget "Bamboo Prod" */;
+			buildPhases = (
+				003AA9EA5C8DC822C2CD2185 /* [CP] Check Pods Manifest.lock */,
+				0AC368E12BAADD9300DD06BD /* Sources */,
+				0AC368E42BAADD9300DD06BD /* Frameworks */,
+				0AC368E62BAADD9300DD06BD /* Resources */,
+				0AC368F22BAADD9300DD06BD /* Bundle React Native code and images */,
+				AA93F1C82DCEDB9FDC8CF8C2 /* [CP] Embed Pods Frameworks */,
+				B7F04B40CFD8D5AEC9A0F493 /* [CP] Copy Pods Resources */,
+				8F9327EB2BF77745004F0A60 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8F9327E92BF77745004F0A60 /* PBXTargetDependency */,
+			);
+			name = "Bamboo Prod";
+			productName = Bamboo;
+			productReference = 0AC368F82BAADD9300DD06BD /* Bamboo Prod.app */;
+			productType = "com.apple.product-type.application";
+		};
+		13B07F861A680F5B00A75B9A /* Bamboo Dev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Bamboo Dev" */;
+			buildPhases = (
+				D3C7A8ABE7F0E3B924CC03BB /* [CP] Check Pods Manifest.lock */,
+				13B07F871A680F5B00A75B9A /* Sources */,
+				13B07F8C1A680F5B00A75B9A /* Frameworks */,
+				13B07F8E1A680F5B00A75B9A /* Resources */,
+				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				1EC1FD96EFB4513D3646642E /* [CP] Embed Pods Frameworks */,
+				FB4563C58722C4CA3A5B03B6 /* [CP] Copy Pods Resources */,
+				8FC825AB2BD2D88B00E4D2A8 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FD3F7102BD3D80200218A24 /* PBXTargetDependency */,
+			);
+			name = "Bamboo Dev";
+			productName = Bamboo;
+			productReference = 13B07F961A680F5B00A75B9A /* Bamboo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8F9327E12BF77745004F0A60 /* ImageNotificationProduct */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F9327EE2BF77745004F0A60 /* Build configuration list for PBXNativeTarget "ImageNotificationProduct" */;
+			buildPhases = (
+				211A34FBEB970A6749FB1746 /* [CP] Check Pods Manifest.lock */,
+				8F9327DE2BF77745004F0A60 /* Sources */,
+				8F9327DF2BF77745004F0A60 /* Frameworks */,
+				8F9327E02BF77745004F0A60 /* Resources */,
+				EA7A50B94A1C3DAEA2D68064 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ImageNotificationProduct;
+			productName = ImageNotificationProduct;
+			productReference = 8F9327E22BF77745004F0A60 /* ImageNotificationProduct.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		8FD3F7082BD3D80200218A24 /* ImageNotification */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FD3F7142BD3D80200218A24 /* Build configuration list for PBXNativeTarget "ImageNotification" */;
+			buildPhases = (
+				709AD1945274B415AA8772B0 /* [CP] Check Pods Manifest.lock */,
+				8FD3F7052BD3D80200218A24 /* Sources */,
+				8FD3F7062BD3D80200218A24 /* Frameworks */,
+				8FD3F7072BD3D80200218A24 /* Resources */,
+				8C9D8C1E590E253D3551E3A3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ImageNotification;
+			productName = ImageNotification;
+			productReference = 8FD3F7092BD3D80200218A24 /* ImageNotification.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83CBB9F71A601CBA00E9B192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					13B07F861A680F5B00A75B9A = {
+						LastSwiftMigration = 1120;
+					};
+					8F9327E12BF77745004F0A60 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					8FD3F7082BD3D80200218A24 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Bamboo" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83CBB9F61A601CBA00E9B192;
+			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13B07F861A680F5B00A75B9A /* Bamboo Dev */,
+				0AC368DF2BAADD9300DD06BD /* Bamboo Prod */,
+				8FD3F7082BD3D80200218A24 /* ImageNotification */,
+				8F9327E12BF77745004F0A60 /* ImageNotificationProduct */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0AC368E62BAADD9300DD06BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AC368E72BAADD9300DD06BD /* LaunchScreen.storyboard in Resources */,
+				0AC368E82BAADD9300DD06BD /* Images.xcassets in Resources */,
+				0AA64D282BF65CE500DB4199 /* GoogleService-Info.plist in Resources */,
+				0AC368EA2BAADD9300DD06BD /* BeVietnamPro-Bold.ttf in Resources */,
+				0AC368EB2BAADD9300DD06BD /* BeVietnamPro-ExtraBold.ttf in Resources */,
+				8FAE87222BD4CD9800A236C8 /* bamboo_sound.wav in Resources */,
+				0AC368EE2BAADD9300DD06BD /* BeVietnamPro-Medium.ttf in Resources */,
+				0AC368EF2BAADD9300DD06BD /* BeVietnamPro-Regular.ttf in Resources */,
+				0AC368F02BAADD9300DD06BD /* BeVietnamPro-SemiBold.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8E1A680F5B00A75B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				0AF81D992BD0477400215703 /* GoogleService-Info.plist in Resources */,
+				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				8FAE87212BD4CD9800A236C8 /* bamboo_sound.wav in Resources */,
+				5DB88E3A83B54695B08941FF /* BeVietnamPro-Bold.ttf in Resources */,
+				4CFEAEE2A5EC47DA9D92C0DF /* BeVietnamPro-ExtraBold.ttf in Resources */,
+				F1A178645ACB4451A0B7346A /* BeVietnamPro-Medium.ttf in Resources */,
+				E49BB15DC29F4FBDAA12A912 /* BeVietnamPro-Regular.ttf in Resources */,
+				A7E685C34AF349019AE1FEF6 /* BeVietnamPro-SemiBold.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F9327E02BF77745004F0A60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FD3F7072BD3D80200218A24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FAE87232BD4CD9800A236C8 /* bamboo_sound.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		003AA9EA5C8DC822C2CD2185 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-shared_pods-Bamboo Prod-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/.xcode.env.local",
+				"$(SRCROOT)/.xcode.env",
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
+		};
+		0AC368F22BAADD9300DD06BD /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/.xcode.env.local",
+				"$(SRCROOT)/.xcode.env",
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
+		};
+		1EC1FD96EFB4513D3646642E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-shared_pods-Bamboo Dev/Pods-shared_pods-Bamboo Dev-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-shared_pods-Bamboo Dev/Pods-shared_pods-Bamboo Dev-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-shared_pods-Bamboo Dev/Pods-shared_pods-Bamboo Dev-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		211A34FBEB970A6749FB1746 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ImageNotificationProduct-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		709AD1945274B415AA8772B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ImageNotification-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C9D8C1E590E253D3551E3A3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImageNotification/Pods-ImageNotification-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImageNotification/Pods-ImageNotification-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ImageNotification/Pods-ImageNotification-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA93F1C82DCEDB9FDC8CF8C2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-shared_pods-Bamboo Prod/Pods-shared_pods-Bamboo Prod-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-shared_pods-Bamboo Prod/Pods-shared_pods-Bamboo Prod-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-shared_pods-Bamboo Prod/Pods-shared_pods-Bamboo Prod-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7F04B40CFD8D5AEC9A0F493 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-shared_pods-Bamboo Prod/Pods-shared_pods-Bamboo Prod-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-shared_pods-Bamboo Prod/Pods-shared_pods-Bamboo Prod-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-shared_pods-Bamboo Prod/Pods-shared_pods-Bamboo Prod-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3C7A8ABE7F0E3B924CC03BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-shared_pods-Bamboo Dev-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA7A50B94A1C3DAEA2D68064 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImageNotificationProduct/Pods-ImageNotificationProduct-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImageNotificationProduct/Pods-ImageNotificationProduct-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ImageNotificationProduct/Pods-ImageNotificationProduct-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB4563C58722C4CA3A5B03B6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-shared_pods-Bamboo Dev/Pods-shared_pods-Bamboo Dev-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-shared_pods-Bamboo Dev/Pods-shared_pods-Bamboo Dev-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-shared_pods-Bamboo Dev/Pods-shared_pods-Bamboo Dev-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0AC368E12BAADD9300DD06BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AC368E22BAADD9300DD06BD /* AppDelegate.mm in Sources */,
+				0AC368E32BAADD9300DD06BD /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F871A680F5B00A75B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
+				13B07FC11A68108700A75B9A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F9327DE2BF77745004F0A60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F9327E62BF77745004F0A60 /* NotificationService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FD3F7052BD3D80200218A24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FD3F70D2BD3D80200218A24 /* NotificationService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8F9327E92BF77745004F0A60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F9327E12BF77745004F0A60 /* ImageNotificationProduct */;
+			targetProxy = 8F9327E82BF77745004F0A60 /* PBXContainerItemProxy */;
+		};
+		8FD3F7102BD3D80200218A24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FD3F7082BD3D80200218A24 /* ImageNotification */;
+			targetProxy = 8FD3F70F2BD3D80200218A24 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0AC368F62BAADD9300DD06BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 756FA5B28E19C69E4CF7E864 /* Pods-shared_pods-Bamboo Prod.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Bamboo/Bamboo Prod.entitlements";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 39FH688GVZ;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Environment/Production/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bamboo.portfolio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		0AC368F72BAADD9300DD06BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC0563E26F993E377D7BC706 /* Pods-shared_pods-Bamboo Prod.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Bamboo/Bamboo Prod.entitlements";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 39FH688GVZ;
+				INFOPLIST_FILE = Environment/Production/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bamboo.portfolio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		13B07F941A680F5B00A75B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DF885C5F5343DD7D550D97F /* Pods-shared_pods-Bamboo Dev.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Bamboo/Bamboo Dev.entitlements";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 39FH688GVZ;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Environment/Development/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bamboo.devportfolio;
+				PRODUCT_NAME = Bamboo;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		13B07F951A680F5B00A75B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79472047F4ECF1A620052E38 /* Pods-shared_pods-Bamboo Dev.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Bamboo/Bamboo Dev.entitlements";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 39FH688GVZ;
+				INFOPLIST_FILE = Environment/Development/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bamboo.devportfolio;
+				PRODUCT_NAME = Bamboo;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		83CBBA201A601CBA00E9B192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon/ReactCommon.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon/ReactCommon.framework/Headers/react/nativemodule/core",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon-Samples/ReactCommon_Samples.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon-Samples/ReactCommon_Samples.framework/Headers/platform/ios",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-Fabric/React_Fabric.framework/Headers/react/renderer/components/view/platform/cxx",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-NativeModulesApple/React_NativeModulesApple.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers/react/renderer/graphics/platform/ios",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/lib/swift\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-DFOLLY_NO_CONFIG",
+					"-DFOLLY_MOBILE=1",
+					"-DFOLLY_USE_LIBCPP=1",
+					"-DFOLLY_CFG_NO_COROUTINES=1",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
+				SDKROOT = iphoneos;
+				USE_HERMES = true;
+			};
+			name = Debug;
+		};
+		83CBBA211A601CBA00E9B192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon/ReactCommon.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon/ReactCommon.framework/Headers/react/nativemodule/core",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon-Samples/ReactCommon_Samples.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon-Samples/ReactCommon_Samples.framework/Headers/platform/ios",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-Fabric/React_Fabric.framework/Headers/react/renderer/components/view/platform/cxx",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-NativeModulesApple/React_NativeModulesApple.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers/react/renderer/graphics/platform/ios",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/lib/swift\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-DFOLLY_NO_CONFIG",
+					"-DFOLLY_MOBILE=1",
+					"-DFOLLY_USE_LIBCPP=1",
+					"-DFOLLY_CFG_NO_COROUTINES=1",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
+				SDKROOT = iphoneos;
+				USE_HERMES = true;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8F9327EC2BF77745004F0A60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5A53A10351A916A01907298 /* Pods-ImageNotificationProduct.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 39FH688GVZ;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ImageNotificationProduct/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ImageNotificationProduct;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bamboo.portfolio.ImageNotificationProduct;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8F9327ED2BF77745004F0A60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DAD52A42A145636C1A0D563 /* Pods-ImageNotificationProduct.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 39FH688GVZ;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ImageNotificationProduct/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ImageNotificationProduct;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bamboo.portfolio.ImageNotificationProduct;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8FD3F7122BD3D80200218A24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C83169F2F3C6990D7B545B0B /* Pods-ImageNotification.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 39FH688GVZ;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ImageNotification/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ImageNotification;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bamboo.devportfolio.ImageNotification;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8FD3F7132BD3D80200218A24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D78F47A1B0D0F7F062658678 /* Pods-ImageNotification.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 39FH688GVZ;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ImageNotification/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ImageNotification;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bamboo.devportfolio.ImageNotification;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0AC368F52BAADD9300DD06BD /* Build configuration list for PBXNativeTarget "Bamboo Prod" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AC368F62BAADD9300DD06BD /* Debug */,
+				0AC368F72BAADD9300DD06BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Bamboo Dev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B07F941A680F5B00A75B9A /* Debug */,
+				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Bamboo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CBBA201A601CBA00E9B192 /* Debug */,
+				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F9327EE2BF77745004F0A60 /* Build configuration list for PBXNativeTarget "ImageNotificationProduct" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F9327EC2BF77745004F0A60 /* Debug */,
+				8F9327ED2BF77745004F0A60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FD3F7142BD3D80200218A24 /* Build configuration list for PBXNativeTarget "ImageNotification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FD3F7122BD3D80200218A24 /* Debug */,
+				8FD3F7132BD3D80200218A24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
+}
