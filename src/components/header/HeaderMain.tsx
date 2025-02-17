@@ -24,8 +24,8 @@ const HeaderMain = (props: Props) => {
 
     const renderBanner = () => (
         <View style={styles.banner}>
-            <Image source={Images.LOGO} style={styles.logo} />
-            <Text style={styles.text}>{t('bamboo_app')}</Text>
+            <Image source={Images.LOGO_BB_APP} style={styles.logo} />
+
         </View>
     );
 
@@ -55,8 +55,8 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     logo: {
-        width: scales(30),
-        height: scales(30),
+        width: scales(70),
+        height: scales(28),
         resizeMode: 'contain',
     },
     text: {
