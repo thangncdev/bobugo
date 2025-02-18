@@ -21,14 +21,13 @@ const OnboardingScreen = () => {
 
     const [agree, setAgree] = useState<boolean>(false);
     const masterdataSupportWebsite = useSelector(masterdataSupportWebsiteSelector);
-
     const onToggle = () => setAgree(!agree);
 
     const openTermsPrivacy = () => {
         goToWebView(t('terms_n_privacy'), masterdataSupportWebsite.link_teams_of_use);
     };
 
-    const sendMailSupport = () => {};
+    const sendMailSupport = () => { };
 
     const handleContinue = () => {
         Storages.set(KeyStorage.AgreedTermsPrivacy, 'true').catch();
@@ -77,7 +76,7 @@ const OnboardingScreen = () => {
             <Text style={TextStyles.Body2}>{t('if_question')} </Text>
             <Text style={{ ...TextStyles.SubTitle3, color: Colors.color_199744 }} onPress={sendMailSupport}>
                 {' '}
-                {Config.EMAIL_SUPPORT}
+                {masterdataSupportWebsite?.EMAIL_SUPPORT}
             </Text>
         </Text>
     );

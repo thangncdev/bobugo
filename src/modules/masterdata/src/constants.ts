@@ -308,6 +308,9 @@ const SUPPORT_WEBSITE: masterdata.SupportWebsite = {
     link_teams_of_use: 'https://bamboolabs.xyz/link-n849.htm',
     link_privacy_policy: 'https://bamboolabs.xyz/link-n850.htm',
     link_contact_us: 'https://bamboolabs.xyz/link-n852.htm',
+    END_POINT: 'https://backend.bobugo.com/mobile',
+    CHART_URL: 'https://chart.bambooapp.xyz',
+    EMAIL_SUPPORT: 'support@bobugo.com',
 };
 
 export const MASTERDATA_INITIAL_STATE: masterdata.State = {

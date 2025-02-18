@@ -45,15 +45,24 @@ export declare namespace userActionTypes {
     type loginWithGGFailureActionType = TypedActionError<typeof userActions.LOGIN_WITH_GG_FAILURE, string>;
 
     type loginWithAppleActionType = TypedAction<typeof userActions.LOGIN_WITH_APPLE, login.LoginWithAppleRequest>;
-    type loginWithAppleSuccessActionType = TypedActionResponse<typeof userActions.LOGIN_WITH_APPLE_SUCCESS, user.AuthPair>;
+    type loginWithAppleSuccessActionType = TypedActionResponse<
+        typeof userActions.LOGIN_WITH_APPLE_SUCCESS,
+        user.AuthPair
+    >;
     type loginWithAppleFailureActionType = TypedActionError<typeof userActions.LOGIN_WITH_APPLE_FAILURE, string>;
 
     type registerActionType = TypedAction<typeof userActions.REGISTER, register.RegisterRequest>;
     type registerSuccessActionType = TypedActionEmpty<typeof userActions.REGISTER_SUCCESS>;
     type registerFailureActionType = TypedActionError<typeof userActions.REGISTER_FAILURE, string>;
 
-    type forgotPasswordActionType = TypedAction<typeof userActions.FORGOT_PASSWORD, forgotPassword.ForgotPasswordRequest>;
-    type forgotPasswordUpdateActionType = TypedAction<typeof userActions.FORGOT_PASSWORD_UPDATE, forgotPassword.ForgotPasswordUpdateRequest>;
+    type forgotPasswordActionType = TypedAction<
+        typeof userActions.FORGOT_PASSWORD,
+        forgotPassword.ForgotPasswordRequest
+    >;
+    type forgotPasswordUpdateActionType = TypedAction<
+        typeof userActions.FORGOT_PASSWORD_UPDATE,
+        forgotPassword.ForgotPasswordUpdateRequest
+    >;
 
     type logoutActionType = TypedAction<typeof userActions.LOGOUT, boolean | undefined>;
     type logoutSuccessActionType = TypedActionEmpty<typeof userActions.LOGOUT_SUCCESS>;
@@ -73,38 +82,90 @@ export declare namespace userActionTypes {
 }
 
 class UserActionCreators {
-    public login = (payload: login.LoginRequest): userActionTypes.loginActionType => ({ type: userActions.LOGIN, payload });
-    public loginSuccess = (response: user.AuthPair): userActionTypes.loginSuccessActionType => ({ type: userActions.LOGIN_SUCCESS, response });
-    public loginFailure = (error: string): userActionTypes.loginFailureActionType => ({ type: userActions.LOGIN_FAILURE, error });
+    public login = (payload: login.LoginRequest): userActionTypes.loginActionType => ({
+        type: userActions.LOGIN,
+        payload,
+    });
+    public loginSuccess = (response: user.AuthPair): userActionTypes.loginSuccessActionType => ({
+        type: userActions.LOGIN_SUCCESS,
+        response,
+    });
+    public loginFailure = (error: string): userActionTypes.loginFailureActionType => ({
+        type: userActions.LOGIN_FAILURE,
+        error,
+    });
 
-    public loginWithGG = (payload: string): userActionTypes.loginWithGGActionType => ({ type: userActions.LOGIN_WITH_GG, payload });
-    public loginWithGGSuccess = (response: user.AuthPair): userActionTypes.loginWithGGSuccessActionType => ({ type: userActions.LOGIN_WITH_GG_SUCCESS, response });
-    public loginWithGGFailure = (error: string): userActionTypes.loginWithGGFailureActionType => ({ type: userActions.LOGIN_WITH_GG_FAILURE, error });
+    public loginWithGG = (payload: string): userActionTypes.loginWithGGActionType => ({
+        type: userActions.LOGIN_WITH_GG,
+        payload,
+    });
+    public loginWithGGSuccess = (response: user.AuthPair): userActionTypes.loginWithGGSuccessActionType => ({
+        type: userActions.LOGIN_WITH_GG_SUCCESS,
+        response,
+    });
+    public loginWithGGFailure = (error: string): userActionTypes.loginWithGGFailureActionType => ({
+        type: userActions.LOGIN_WITH_GG_FAILURE,
+        error,
+    });
 
-    public loginWithApple = (payload: login.LoginWithAppleRequest): userActionTypes.loginWithAppleActionType => ({ type: userActions.LOGIN_WITH_APPLE, payload });
-    public loginWithAppleSuccess = (response: user.AuthPair): userActionTypes.loginWithAppleSuccessActionType => ({ type: userActions.LOGIN_WITH_APPLE_SUCCESS, response });
-    public loginWithAppleFailure = (error: string): userActionTypes.loginWithAppleFailureActionType => ({ type: userActions.LOGIN_WITH_APPLE_FAILURE, error });
+    public loginWithApple = (payload: login.LoginWithAppleRequest): userActionTypes.loginWithAppleActionType => ({
+        type: userActions.LOGIN_WITH_APPLE,
+        payload,
+    });
+    public loginWithAppleSuccess = (response: user.AuthPair): userActionTypes.loginWithAppleSuccessActionType => ({
+        type: userActions.LOGIN_WITH_APPLE_SUCCESS,
+        response,
+    });
+    public loginWithAppleFailure = (error: string): userActionTypes.loginWithAppleFailureActionType => ({
+        type: userActions.LOGIN_WITH_APPLE_FAILURE,
+        error,
+    });
 
-    public register = (payload: register.RegisterRequest): userActionTypes.registerActionType => ({ type: userActions.REGISTER, payload });
+    public register = (payload: register.RegisterRequest): userActionTypes.registerActionType => ({
+        type: userActions.REGISTER,
+        payload,
+    });
     public registerSuccess = (): userActionTypes.registerSuccessActionType => ({ type: userActions.REGISTER_SUCCESS });
-    public registerFailure = (error: string): userActionTypes.registerFailureActionType => ({ type: userActions.REGISTER_FAILURE, error });
+    public registerFailure = (error: string): userActionTypes.registerFailureActionType => ({
+        type: userActions.REGISTER_FAILURE,
+        error,
+    });
 
-    public forgotPassword = (payload: forgotPassword.ForgotPasswordRequest): userActionTypes.forgotPasswordActionType => ({ type: userActions.FORGOT_PASSWORD, payload });
-    public forgotPasswordUpdate = (payload: forgotPassword.ForgotPasswordUpdateRequest): userActionTypes.forgotPasswordUpdateActionType => ({ type: userActions.FORGOT_PASSWORD_UPDATE, payload });
+    public forgotPassword = (
+        payload: forgotPassword.ForgotPasswordRequest
+    ): userActionTypes.forgotPasswordActionType => ({ type: userActions.FORGOT_PASSWORD, payload });
+    public forgotPasswordUpdate = (
+        payload: forgotPassword.ForgotPasswordUpdateRequest
+    ): userActionTypes.forgotPasswordUpdateActionType => ({ type: userActions.FORGOT_PASSWORD_UPDATE, payload });
 
     public logout = (payload?: boolean): userActionTypes.logoutActionType => ({ type: userActions.LOGOUT, payload });
     public logoutSuccess = (): userActionTypes.logoutSuccessActionType => ({ type: userActions.LOGOUT_SUCCESS });
-    public logoutFailure = (error: string): userActionTypes.logoutFailureActionType => ({ type: userActions.LOGOUT_FAILURE, error });
+    public logoutFailure = (error: string): userActionTypes.logoutFailureActionType => ({
+        type: userActions.LOGOUT_FAILURE,
+        error,
+    });
 
     public getProfile = (): userActionTypes.getProfileActionType => ({ type: userActions.GET_PROFILE });
-    public getProfileSuccess = (response: user.Profile): userActionTypes.getProfileSuccessActionType => ({ type: userActions.GET_PROFILE_SUCCESS, response });
-    public getProfileFailure = (error: string): userActionTypes.getProfileFailureActionType => ({ type: userActions.GET_PROFILE_FAILURE, error });
+    public getProfileSuccess = (response: user.Profile): userActionTypes.getProfileSuccessActionType => ({
+        type: userActions.GET_PROFILE_SUCCESS,
+        response,
+    });
+    public getProfileFailure = (error: string): userActionTypes.getProfileFailureActionType => ({
+        type: userActions.GET_PROFILE_FAILURE,
+        error,
+    });
 
-    public changePassword = (payload: user.ChangePasswordRequest): userActionTypes.changePasswordActionType => ({ type: userActions.CHANGE_PASSWORD, payload });
+    public changePassword = (payload: user.ChangePasswordRequest): userActionTypes.changePasswordActionType => ({
+        type: userActions.CHANGE_PASSWORD,
+        payload,
+    });
 
     public deleteProfile = (): userActionTypes.deleteProfileActionType => ({ type: userActions.DELETE_PROFILE });
 
-    public updateFcmToken = (payload: login.UpdateFCMTokenRequest): userActionTypes.updateFcmTokenActionType => ({ type: userActions.UPDATE_FCM_TOKEN, payload });
+    public updateFcmToken = (payload: login.UpdateFCMTokenRequest): userActionTypes.updateFcmTokenActionType => ({
+        type: userActions.UPDATE_FCM_TOKEN,
+        payload,
+    });
 
     public toggleBalance = (): userActionTypes.toggleBalanceActionType => ({ type: userActions.TOGGLE_BALANCE });
 }

@@ -131,6 +131,8 @@ async function requestPermission(updateFCMToken) {
 
 const getToken = async (updateFCMToken) => {
     const deviceToken = await messaging().getToken();
+    console.log('fcmToken', deviceToken);
+    // Clipboard.setString(deviceToken);
     if (deviceToken) {
         updateFCMToken(deviceToken);
     }

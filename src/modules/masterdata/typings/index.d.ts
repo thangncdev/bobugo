@@ -42,5 +42,8 @@ declare namespace masterdata {
         link_teams_of_use: string;
         link_privacy_policy: string;
         link_contact_us: string;
+        END_POINT: string;
+        CHART_URL: string;
+        EMAIL_SUPPORT: string;
     }
 }
