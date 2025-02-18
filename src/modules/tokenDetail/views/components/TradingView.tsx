@@ -8,7 +8,7 @@ import Svgs from 'assets/svgs';
 import { TouchableOpacity } from 'components/base';
 import DialogUtil from 'components/dialog';
 import { useSetting } from 'contexts/SettingProvider';
-import { masterdataNftIntervalsSelector, masterdataTokenIntervalsSelector } from 'modules/masterdata/src/selectors';
+import { masterdataNftIntervalsSelector, masterdataSupportWebsiteSelector, masterdataTokenIntervalsSelector } from 'modules/masterdata/src/selectors';
 import { isTokenKey } from 'modules/tokenDetail/src/utils';
 import IntervalsSelection from 'modules/tokenDetail/views/components/IntervalSelection';
 import { Colors, Fonts, Sizes } from 'themes';
@@ -24,6 +24,7 @@ const TradingView = (props: TradingViewProps) => {
 
     const tokenIntervals = useSelector(masterdataTokenIntervalsSelector);
     const nftIntervals = useSelector(masterdataNftIntervalsSelector);
+    const masterdataSupportWebsite = useSelector(masterdataSupportWebsiteSelector);
 
     const tokenKey = token.key as markets.TokenKey;
     const nftKey = token.key as markets.NftKey;
@@ -36,7 +37,7 @@ const TradingView = (props: TradingViewProps) => {
     const dropdownInterval = useRef<View>(null);
 
     const key = isToken ? `unit=${tokenKey?.unit}` : `policy=${nftKey?.policy}`
-    const urlObject = `${Config.CHART_URL}/?${key}&interval=${interval.key}&numIntervals=180`;
+    const urlObject = `${masterdataSupportWebsite?.CHART_URL ?? Config.CHART_URL}/?${key}&interval=${interval.key}&numIntervals=180`;
 
     const onShowDropdownInterval = () => {
         dropdownInterval.current.measure(
@@ -79,9 +80,9 @@ const TradingView = (props: TradingViewProps) => {
                 automaticallyAdjustContentInsets
                 style={styles.webView}
                 source={{ uri: urlObject }}
-                // onLoadProgress={({ nativeEvent }) => {
-                //     setLoadingProgress(nativeEvent.progress);
-                // }}
+            // onLoadProgress={({ nativeEvent }) => {
+            //     setLoadingProgress(nativeEvent.progress);
+            // }}
             />
         </View>
     )

@@ -1,7 +1,7 @@
 import notifee, { AndroidImportance, AndroidLaunchActivityFlag, AndroidStyle } from '@notifee/react-native';
 import messaging, { FirebaseMessagingTypes } from '@react-native-firebase/messaging';
 import { get } from 'lodash';
-import { Clipboard, PermissionsAndroid, Platform } from 'react-native';
+import { PermissionsAndroid, Platform } from 'react-native';
 
 import { navigate } from 'modules/navigation/src/utils';
 import { convertPayloadToQueryString, convertQueryStringToPayload, getExtraParams, getExtraPrefix } from 'utils/string';
@@ -131,8 +131,8 @@ async function requestPermission(updateFCMToken) {
 
 const getToken = async (updateFCMToken) => {
     const deviceToken = await messaging().getToken();
-    console.log('deviceToken', deviceToken);
-    Clipboard.setString(deviceToken);
+    console.log('fcmToken', deviceToken);
+    // Clipboard.setString(deviceToken);
     if (deviceToken) {
         updateFCMToken(deviceToken);
     }
