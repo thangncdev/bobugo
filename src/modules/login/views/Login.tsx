@@ -150,16 +150,16 @@ const LoginScreen = (props: LoginScreenProps) => {
     );
 
     const renderLoginGG = () => (
-        <TouchableOpacity style={styles.socialButton} onPress={onGoogleButtonPress}>
+        <TouchableOpacity style={[styles.socialButton, styles.loginGoogle]} onPress={onGoogleButtonPress}>
             <Svgs.IcGG width={scales(24)} height={scales(24)} />
             <Text style={styles.socialText}>{t('sign_in_gg')}</Text>
         </TouchableOpacity>
     );
 
     const renderLoginApple = () => (
-        <TouchableOpacity style={[styles.socialButton, { marginTop: scales(8) }]} onPress={onAppleButtonPress}>
+        <TouchableOpacity style={[styles.socialButton, styles.loginApple]} onPress={onAppleButtonPress}>
             <Svgs.IcApple width={scales(24)} height={scales(24)} />
-            <Text style={styles.socialText}>{t('sign_in_apple')}</Text>
+            <Text style={styles.loginAppleText}>{t('sign_in_apple')}</Text>
         </TouchableOpacity>
     );
 
@@ -260,6 +260,25 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
         alignItems: 'center',
         paddingVertical: scales(8),
+        width: scales(231),
+        paddingLeft: scales(32),
+    },
+    loginApple: {
+        marginTop: scales(8),
+        backgroundColor: Colors.color_090F24,
+        borderRadius: scales(50),
+    },
+    loginGoogle: {
+        marginTop: scales(8),
+        borderWidth: 1,
+        borderColor: Colors.color_A2A4AA,
+        borderRadius: scales(50),
+    },
+    loginAppleText: {
+        ...Fonts.w600,
+        fontSize: scales(14),
+        color: Colors.color_FFFFFF,
+        paddingLeft: scales(8),
     },
     socialText: {
         ...Fonts.w600,
