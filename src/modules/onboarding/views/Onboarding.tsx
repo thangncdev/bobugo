@@ -15,6 +15,7 @@ import { Colors, Sizes } from 'themes';
 import TextStyles from 'themes/textStyles';
 import scales from 'utils/scales';
 import Storages, { KeyStorage } from 'utils/storages';
+import GradientButton from 'components/button/GradientButton';
 
 const OnboardingScreen = () => {
     const { t } = useSetting();
@@ -60,7 +61,7 @@ const OnboardingScreen = () => {
                     </Text>
                 </Text>
             </View>
-            <Button
+            <GradientButton
                 onPress={handleContinue}
                 disabled={!agree}
                 customStyles={styles.button}

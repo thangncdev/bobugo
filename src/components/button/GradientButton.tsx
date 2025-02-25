@@ -35,7 +35,10 @@ const GradientButton = (props: ButtonProps) => {
             disabled={disabled}
         >
             <LinearGradient
-                colors={['#4c669f', '#3b5998', '#192f6a']}
+                colors={[Colors.color_4FE54D, Colors.color_1CB21A]}
+                start={{x: 0, y: 0}}
+                end={{x: 0, y: 1}}
+                locations={[0.36, 0.96]}
                 style={[
                     styles.container,
                     width ? { width } : {},
