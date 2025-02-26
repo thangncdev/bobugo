@@ -111,7 +111,9 @@ const AlertsScreen = (props: AlertsScreenProps) => {
     );
 
     const renderButtonAlerts = () => (
-        <TouchableOpacity onPress={goToAddPriceAlertsValid}>
+        <TouchableOpacity style={{
+            flex: 1,
+        }} onPress={goToAddPriceAlertsValid}>
             <LinearGradient
                 colors={[Colors.color_4FE54D, Colors.color_1CB21A]}
                 start={{ x: 0, y: 0 }}
@@ -126,6 +128,7 @@ const AlertsScreen = (props: AlertsScreenProps) => {
     );
 
     const goToAddPriceAlertsValid = () => {
+        console.log('validateLimit', validateLimit());
         if (validateLimit()) {
             goToAddPriceAlerts(isTokenRoute);
         } else {

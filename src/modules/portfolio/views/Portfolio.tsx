@@ -221,7 +221,9 @@ const PortfolioScreen = (props: PortfolioScreenDispatchProps & StateProps) => {
     );
 
     const renderButtonPortfolio = () => (
-        <TouchableOpacity  onPress={goToAddAddressValid}>
+        <TouchableOpacity style={{
+            flex: 1,
+        }} onPress={goToAddAddressValid}>
             <LinearGradient
                 colors={[Colors.color_4FE54D, Colors.color_1CB21A]}
                 start={{ x: 0, y: 0 }}
