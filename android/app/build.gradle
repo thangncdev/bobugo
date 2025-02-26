@@ -105,8 +105,8 @@ android {
             resValue "string", "build_config_package", "com.bamboo"
             resValue "string", "app_name", "Bamboo"
             resValue "string", "app_scheme", "portfolio"
-            versionCode 2
-            versionName "1.0"
+            versionCode 4
+            versionName "2.0"
             matchingFallbacks = ['debug', 'release']
         }
     }
