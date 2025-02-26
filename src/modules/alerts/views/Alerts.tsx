@@ -17,9 +17,9 @@ import { goToAddPriceAlerts } from 'modules/alerts/src/utils';
 import AlertsScene from 'modules/alerts/views/AlertsScene';
 import AlertsTabBar from 'modules/alerts/views/components/AlertsTabBar';
 import { profileInfoSelector } from 'modules/user/src/selectors';
+import LinearGradient from 'react-native-linear-gradient';
 import { Colors, Fonts } from 'themes';
 import scales from 'utils/scales';
-
 interface StateProps {
     profile: user.Profile;
 }
@@ -52,7 +52,7 @@ const AlertsScreen = (props: AlertsScreenProps) => {
         return (
             <View style={styles.rightHeader}>
                 <TouchableOpacity onPress={goToAddPriceAlertsValid}>
-                    <Svgs.IcSearch2 width={scales(24)} height={scales(24)} />
+                    <Svgs.IcSearch width={scales(24)} height={scales(24)} />
                 </TouchableOpacity>
                 <TouchableOpacity disabled={!isEnableDeleteBtn} style={styles.btnDelete} onPress={showDialogDeleteAll}>
                     <Svgs.IcTrash
@@ -111,9 +111,17 @@ const AlertsScreen = (props: AlertsScreenProps) => {
     );
 
     const renderButtonAlerts = () => (
-        <TouchableOpacity style={styles.btnAlerts} onPress={goToAddPriceAlertsValid}>
-            <Svgs.IcAdd width={scales(24)} height={scales(24)} color={Colors.color_FFFFFF} />
-            <Text style={styles.textAlerts}>{t('tabBar.alerts')}</Text>
+        <TouchableOpacity onPress={goToAddPriceAlertsValid}>
+            <LinearGradient
+                colors={[Colors.color_4FE54D, Colors.color_1CB21A]}
+                start={{ x: 0, y: 0 }}
+                end={{ x: 0, y: 1 }}
+                locations={[0.36, 0.96]}
+                style={styles.btnAlerts}
+            >
+                <Svgs.IcAdd width={scales(24)} height={scales(24)} color={Colors.color_FFFFFF} />
+                <Text style={styles.textAlerts}>{t('tabBar.alerts')}</Text>
+            </LinearGradient>
         </TouchableOpacity>
     );
 
@@ -197,6 +205,6 @@ const styles = StyleSheet.create({
         justifyContent: 'flex-end',
     },
     btnDelete: {
-        marginLeft: scales(24),
+        marginLeft: scales(16),
     },
 });

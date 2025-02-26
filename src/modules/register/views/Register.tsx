@@ -5,7 +5,7 @@ import { connect, useSelector } from 'react-redux';
 import Images from 'assets/images';
 import Svgs from 'assets/svgs';
 import { TouchableOpacity } from 'components/base';
-import Button from 'components/button/Button';
+import GradientButton from 'components/button/GradientButton';
 import Header from 'components/header/Header';
 import Input from 'components/input/Input';
 import { useSetting } from 'contexts/SettingProvider';
@@ -130,7 +130,7 @@ const RegisterScreen = (props: RegisterScreenProps) => {
     )
 
     const renderButtonSignUp = () => (
-        <Button
+        <GradientButton
             title={t('sign_up')}
             onPress={onRegister}
             customStyles={styles.button}
@@ -262,7 +262,6 @@ const styles = StyleSheet.create({
         marginTop: scales(40),
         marginBottom: scales(16),
         width: Sizes.screenWidth - scales(100),
-        backgroundColor: Colors.color_199744,
         paddingVertical: scales(10),
         paddingHorizontal: scales(20),
         borderRadius: scales(50),

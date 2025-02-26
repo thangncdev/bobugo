@@ -281,7 +281,6 @@ const AlertsScene = (props: AlertSceneProps) => {
             renderItem={renderItem}
             keyExtractor={keyExtractor}
             ListEmptyComponent={renderEmpty()}
-            ItemSeparatorComponent={renderSeparator}
             ListFooterComponent={renderFooter}
             onEndReached={onLoadMore}
             onEndReachedThreshold={0.01}

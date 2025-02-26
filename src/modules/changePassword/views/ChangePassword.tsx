@@ -5,7 +5,7 @@ import { connect, useSelector } from 'react-redux';
 import Images from 'assets/images';
 import Svgs from 'assets/svgs';
 import { TouchableOpacity } from 'components/base';
-import Button from 'components/button/Button';
+import GradientButton from 'components/button/GradientButton';
 import Header from 'components/header/Header';
 import Input from 'components/input/Input';
 import { useSetting } from 'contexts/SettingProvider';
@@ -119,7 +119,7 @@ const ChangePasswordScreen = (props: ChangePasswordScreenProps) => {
     );
 
     const renderButtonChangePassword = () => (
-        <Button
+        <GradientButton
             title={t('send')}
             onPress={onChangePassword}
             customStyles={styles.button}

@@ -10,6 +10,7 @@ import { CURRENCY_DROPDOWN_WIDTH, CurrencyUnit, SEARCH_DROPDOWN_WIDTH, TokensTyp
 import { masterdataActionCreators } from 'modules/masterdata/src/actions';
 import { masterdataUnitSelectedSelector } from 'modules/masterdata/src/selectors';
 import { pushToPage } from 'modules/navigation/src/utils';
+import LinearGradient from 'react-native-linear-gradient';
 import { Colors, Fonts } from 'themes';
 import scales from 'utils/scales';
 
@@ -52,13 +53,21 @@ const RightHeaderMarket = (props: RightHeaderMarketProps) => {
 
         return (
             <TouchableOpacity onPress={onShowDropdownCurrency}>
-                <View ref={dropdownUnit} style={styles.selectCurrency} collapsable={false}>
-                    <Icon width={scales(16)} height={scales(16)} />
-                    <Text style={styles.textCurrency}>
-                        {unitSelected.toUpperCase()}
-                    </Text>
-                    <Svgs.IcArrowDown width={scales(12)} height={scales(12)} />
-                </View>
+                <LinearGradient
+                    colors={[Colors.color_4FE54D, Colors.color_1CB21A]}
+                    start={{ x: 0, y: 0 }}
+                    end={{ x: 0, y: 1 }}
+                    locations={[0.36, 0.96]}
+                    style={styles.selectCurrency}
+                >
+                    <View ref={dropdownUnit} style={styles.selectCurrencyView} collapsable={false}>
+                        <Icon width={scales(16)} height={scales(16)} />
+                        <Text style={styles.textCurrency}>
+                            {unitSelected.toUpperCase()}
+                        </Text>
+                        <Svgs.IcArrowDown width={scales(12)} height={scales(12)} />
+                    </View>
+                </LinearGradient>
             </TouchableOpacity>
         );
     };
@@ -69,8 +78,8 @@ const RightHeaderMarket = (props: RightHeaderMarketProps) => {
         dropdownUnit.current.measure(
             (x, y, width, height, px, py) => {
                 const dropdownConfig = {
-                    marginTop: py + height + scales(5),
-                    marginLeft: px - CURRENCY_DROPDOWN_WIDTH + width,
+                    marginTop: py + height + scales(16),
+                    marginLeft: px - CURRENCY_DROPDOWN_WIDTH + width + scales(6),
                     children: (
                         <TouchableOpacity onPress={onSelectCurrency}>
                             <View style={[styles.selectCurrency, { backgroundColor: Colors.color_FFFFFF }]}>
@@ -99,20 +108,30 @@ const RightHeaderMarket = (props: RightHeaderMarketProps) => {
                 const dropdownConfig = {
                     marginTop: py + height + scales(5),
                     marginLeft: px - SEARCH_DROPDOWN_WIDTH - scales(10) + width,
+                    overlay: true,
+                    overlayColor: 'rgba(0, 0, 0, 0.3)',
                     children: (
                         <View style={styles.dropdownSearchContainer}>
                             {listData.map((data, index) => {
                                 const isSelected = currentIndex === index;
                                 return (
-                                    <TouchableOpacity
-                                        key={data}
-                                        onPress={() => goToMarketSearch(data)}
-                                        style={[styles.dropdownSearchItem, isSelected ? { backgroundColor: Colors.color_199744 } : {}]}
+                                    <LinearGradient
+                                        colors={isSelected ? [Colors.color_4FE54D, Colors.color_1CB21A] : [Colors.transparent, Colors.transparent]}
+                                        start={{ x: 0, y: 0 }}
+                                        end={{ x: 0, y: 1 }}
+                                        locations={[0.36, 0.96]}
+                                        style={styles.dropdownSearchItem}
                                     >
-                                        <Text style={[styles.dropdownSearchText, isSelected ? { color: Colors.color_FFFFFF } : {}]}>
-                                            {t(data)}
-                                        </Text>
-                                    </TouchableOpacity>
+                                        <TouchableOpacity
+                                            key={data}
+                                            onPress={() => goToMarketSearch(data)}
+                                            style={[styles.dropdownSearchItem]}
+                                        >
+                                            <Text style={[styles.dropdownSearchText, isSelected ? { color: Colors.color_FFFFFF } : {}]}>
+                                                {t(data)}
+                                            </Text>
+                                        </TouchableOpacity>
+                                    </LinearGradient>
                                 );
                             })}
                         </View>
@@ -158,8 +177,8 @@ const styles = StyleSheet.create({
         justifyContent: 'flex-end',
     },
     search: {
-        width: scales(36),
-        height: scales(36),
+        // width: scales(36),
+        // height: scales(36),
         justifyContent: 'center',
         marginRight: scales(10),
     },
@@ -168,7 +187,12 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         padding: scales(4),
         borderRadius: scales(5),
-        backgroundColor: Colors.color_199744,
+        justifyContent: 'space-between',
+        alignItems: 'center',
+    },
+    selectCurrencyView: {
+        flex: 1,
+        flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
     },
@@ -187,7 +211,8 @@ const styles = StyleSheet.create({
     dropdownSearchItem: {
         width: SEARCH_DROPDOWN_WIDTH,
         height: scales(40),
-        borderRadius: scales(5),
+        borderTopLeftRadius: scales(5),
+        borderTopRightRadius: scales(5),
         justifyContent: 'center',
         paddingHorizontal: scales(16),
     },

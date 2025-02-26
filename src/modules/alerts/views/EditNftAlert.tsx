@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 
 import Svgs from 'assets/svgs';
 import { Image } from 'components/base';
-import Button from 'components/button/Button';
+import GradientButton from 'components/button/GradientButton';
 import Checkbox from 'components/checkbox/Checkbox';
 import InputNumber from 'components/input/InputNumber';
 import { useSetting } from 'contexts/SettingProvider';
@@ -150,7 +150,7 @@ const EditNftAlertScreen = (props: EditNftAlertProps) => {
                 <Text style={styles.textCheck}>{t('get_recurring')} </Text>
             </View>
             <View style={styles.btnBottom}>
-                <Button title={t('set_price')} onPress={handleAddNftAlert} />
+                <GradientButton title={t('set_price')} onPress={handleAddNftAlert} />
             </View>
         </TouchableOpacity >
     )

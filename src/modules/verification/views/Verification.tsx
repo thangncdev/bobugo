@@ -8,17 +8,17 @@ import { connect, useSelector } from 'react-redux';
 import Images from 'assets/images';
 import Svgs from 'assets/svgs';
 import { TouchableOpacity } from 'components/base';
-import Button from 'components/button/Button';
+import GradientButton from 'components/button/GradientButton';
 import Header from 'components/header/Header';
 import { useSetting } from 'contexts/SettingProvider';
 import { onAppleButtonPress, onGoogleButtonPress } from 'modules/login/src/utils';
+import { masterdataSupportWebsiteSelector } from 'modules/masterdata/src/selectors';
 import { navigate } from 'modules/navigation/src/utils';
 import { RootNavigatorParamList } from 'modules/navigation/typings';
 import { verificationActionCreators } from 'modules/verification/src/actions';
+import { goToWebView } from 'modules/webview/src/utils';
 import { Colors, Fonts, Sizes } from 'themes';
 import scales from 'utils/scales';
-import { masterdataSupportWebsiteSelector } from 'modules/masterdata/src/selectors';
-import { goToWebView } from 'modules/webview/src/utils';
 
 const CELL_COUNT = 6;
 const DURATION = 90;
@@ -154,7 +154,7 @@ const VerificationScreen = (props: VerificationScreenProps) => {
     );
 
     const renderSubmit = () => (
-        <Button
+        <GradientButton
             title={t('send')}
             onPress={onSubmit}
             customStyles={styles.button}

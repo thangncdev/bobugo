@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { BackHandler, Image, ImageURISource, StyleProp, StyleSheet, Text, TextStyle, View } from 'react-native';
 
 import Button from 'components/button/Button';
+import GradientButton from 'components/button/GradientButton';
 import { DialogType } from 'constants/constants';
 import { useSetting } from 'contexts/SettingProvider';
 import { Colors, Fonts } from 'themes';
@@ -33,8 +34,8 @@ const Dialog = (props: DialogProps) => {
         };
 
         const backHandler = BackHandler.addEventListener(
-          'hardwareBackPress',
-          backAction,
+            'hardwareBackPress',
+            backAction,
         );
 
         return () => backHandler.remove();
@@ -85,7 +86,8 @@ const Dialog = (props: DialogProps) => {
     );
 
     const renderButtonConfirm = () => (
-        <Button
+        <GradientButton
+            customStylesContainer={styles.button}
             title={textButtonConfirm || t('yes')}
             customStyles={styles.button}
             customTextStyles={styles.buttonText}
@@ -154,6 +156,8 @@ const styles = StyleSheet.create({
     viewButton: {
         flexDirection: 'row',
         alignItems: 'center',
+        width: '100%',
+        height: scales(40),
         justifyContent: 'space-between',
     },
 });

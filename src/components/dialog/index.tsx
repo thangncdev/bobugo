@@ -11,7 +11,7 @@ const elements = [];
 
 export default class DialogUtil {
     public static async showDropdown(dropdownConfig) {
-        const { marginLeft, marginTop, children } = dropdownConfig;
+        const { marginLeft, marginTop, children, overlay, overlayColor } = dropdownConfig;
         const animated = new Animated.Value(0);
         await animated.setValue(0);
         await Animated.timing(animated, {
@@ -28,7 +28,10 @@ export default class DialogUtil {
         const sibling = new RootSiblings(
             <TouchableOpacity
                 activeOpacity={1}
-                style={styles.dropdownContainer}
+                style={[
+                    styles.dropdownContainer,
+                    overlay && { backgroundColor: overlayColor || 'rgba(0, 0, 0, 0.5)' }
+                ]}
                 onPress={this.dismiss}
             >
                 <Animated.View
