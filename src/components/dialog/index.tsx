@@ -30,7 +30,7 @@ export default class DialogUtil {
                 activeOpacity={1}
                 style={[
                     styles.dropdownContainer,
-                    overlay && { backgroundColor: overlayColor || 'rgba(0, 0, 0, 0.5)' }
+                    overlay && { backgroundColor: overlayColor || 'rgba(0, 0, 0, 0.5)' },
                 ]}
                 onPress={this.dismiss}
             >
