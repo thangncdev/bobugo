@@ -111,9 +111,11 @@ const AlertsScreen = (props: AlertsScreenProps) => {
     );
 
     const renderButtonAlerts = () => (
-        <TouchableOpacity style={{
-            flex: 1,
-        }} onPress={goToAddPriceAlertsValid}>
+        <TouchableOpacity
+            activeOpacity={0.7}
+            onPress={goToAddPriceAlertsValid}
+            style={styles.touchableContainer}
+        >
             <LinearGradient
                 colors={[Colors.color_4FE54D, Colors.color_1CB21A]}
                 start={{ x: 0, y: 0 }}
@@ -183,15 +185,17 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: Colors.color_FFFFFF,
     },
-    btnAlerts: {
+    touchableContainer: {
         position: 'absolute',
         bottom: scales(28),
         right: scales(32),
-        height: scales(40),
         zIndex: 1,
+    },
+    btnAlerts: {
         flexDirection: 'row',
         backgroundColor: Colors.color_199744,
         paddingHorizontal: scales(24),
+        paddingVertical: scales(8),
         borderRadius: scales(5),
         alignItems: 'center',
     },
