@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 
 import Svgs from 'assets/svgs';
 import { Image } from 'components/base';
-import Button from 'components/button/Button';
+import GradientButton from 'components/button/GradientButton';
 import Checkbox from 'components/checkbox/Checkbox';
 import InputNumber from 'components/input/InputNumber';
 import { useSetting } from 'contexts/SettingProvider';
@@ -31,7 +31,7 @@ const AddNftAlertScreen = (props: AddNftAlertProps) => {
     const { t } = useSetting();
     const { addNftAlert } = props
     const { params } = props?.route
-    const newPriceADA = params?.price_ada?.slice(0, -1)
+    const newPriceADA = params?.price_ada ? params?.price_ada?.slice(0, -1) : ''
 
     const [price, setPrice] = useState<string>();
     const [listing, setListing] = useState<string>();
@@ -149,7 +149,7 @@ const AddNftAlertScreen = (props: AddNftAlertProps) => {
                 <Text style={styles.textCheck}>{t('get_recurring')} </Text>
             </View>
             <View style={styles.btnBottom}>
-                <Button title={t('set_price')} onPress={handleAddNftAlert} />
+                <GradientButton title={t('set_price')} onPress={handleAddNftAlert} />
             </View>
         </TouchableOpacity >
     )

@@ -4,9 +4,9 @@ import { StyleSheet, Text, View } from 'react-native';
 import { NavigationState } from 'react-native-tab-view/lib/typescript/src/types';
 
 import { TouchableOpacity } from 'components/base';
+import LinearGradient from 'react-native-linear-gradient';
 import { Colors, Fonts } from 'themes';
 import scales from 'utils/scales';
-import LinearGradient from 'react-native-linear-gradient';
 
 interface Props {
     setIndex: (index: number) => void;
@@ -48,7 +48,6 @@ export default TokenDetailTabBar;
 const styles = StyleSheet.create({
     container: {
         flexDirection: 'row',
-        height: scales(48),
         paddingBottom: scales(8),
         paddingHorizontal: scales(65),
         alignItems: 'center',

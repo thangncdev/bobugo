@@ -221,9 +221,21 @@ const PortfolioScreen = (props: PortfolioScreenDispatchProps & StateProps) => {
     );
 
     const renderButtonPortfolio = () => (
-        <TouchableOpacity style={styles.btnAlerts} onPress={goToAddAddressValid}>
-            <Svgs.IcAdd width={scales(24)} height={scales(24)} color={Colors.color_FFFFFF} />
-            <Text style={styles.textAlerts}>{t('address')}</Text>
+        <TouchableOpacity
+            activeOpacity={0.7}
+            onPress={goToAddAddressValid}
+            style={styles.touchableContainer}
+        >
+            <LinearGradient
+                colors={[Colors.color_4FE54D, Colors.color_1CB21A]}
+                start={{ x: 0, y: 0 }}
+                end={{ x: 0, y: 1 }}
+                locations={[0.36, 0.96]}
+                style={styles.btnAlerts}
+            >
+                <Svgs.IcAdd width={scales(24)} height={scales(24)} color={Colors.color_FFFFFF} />
+                <Text style={styles.textAlerts}>{t('address')}</Text>
+            </LinearGradient>
         </TouchableOpacity>
     );
 
@@ -273,11 +285,13 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: Colors.color_FFFFFF,
     },
-    btnAlerts: {
+    touchableContainer: {
         position: 'absolute',
         bottom: scales(28),
         right: scales(16),
         zIndex: 1,
+    },
+    btnAlerts: {
         flexDirection: 'row',
         backgroundColor: Colors.color_199744,
         paddingVertical: scales(8),

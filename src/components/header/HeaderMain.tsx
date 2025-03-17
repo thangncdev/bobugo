@@ -44,8 +44,8 @@ const styles = StyleSheet.create({
     container: {
         flexDirection: 'row',
         backgroundColor: Colors.color_FFFFFF,
-        height: Sizes.statusBarHeight + scales(60),
         paddingTop: Sizes.statusBarHeight,
+        marginBottom: scales(8),
         paddingHorizontal: scales(20),
         alignItems: 'center',
     },

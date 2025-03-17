@@ -92,7 +92,7 @@ android {
             minSdkVersion rootProject.ext.minSdkVersion
             targetSdkVersion rootProject.ext.targetSdkVersion
             resValue "string", "build_config_package", "com.bamboo"
-            resValue "string", "app_name", "Bamboo Dev"
+            resValue "string", "app_name", "Bobugo Dev"
             resValue "string", "app_scheme", "devportfolio"
             versionCode 1
             versionName "1.0"
@@ -103,10 +103,10 @@ android {
             minSdkVersion rootProject.ext.minSdkVersion
             targetSdkVersion rootProject.ext.targetSdkVersion
             resValue "string", "build_config_package", "com.bamboo"
-            resValue "string", "app_name", "Bamboo"
+            resValue "string", "app_name", "Bobugo"
             resValue "string", "app_scheme", "portfolio"
-            versionCode 2
-            versionName "1.0"
+            versionCode 6
+            versionName "2.2"
             matchingFallbacks = ['debug', 'release']
         }
     }

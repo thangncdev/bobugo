@@ -5,7 +5,7 @@ import { Keyboard, KeyboardAvoidingView, StyleSheet, Text, TextInput, View } fro
 import { connect } from 'react-redux';
 
 import { TouchableOpacity } from 'components/base';
-import Button from 'components/button/Button';
+import GradientButton from 'components/button/GradientButton';
 import Header from 'components/header/Header';
 import InputNumber from 'components/input/InputNumber';
 import { useSetting } from 'contexts/SettingProvider';
@@ -71,11 +71,11 @@ const AddTokenAlertScreen = (props: AddTokenAlertScreenProps) => {
         >
             <Header title={params?.name} styleTitle={styles.title} />
             <View style={styles.content}>
-                <View style={styles.btnAlert}>
-                    <Text style={styles.textAlert}>
-                        {t('alerts_by')}
-                    </Text>
-                </View>
+                <GradientButton
+                    title={t('alerts_by')}
+                    customStyles={styles.btnAlert}
+                    customTextStyles={styles.textAlert}
+                />
                 <View style={styles.viewInputPrice}>
                     <Text style={styles.whenPrice}>{t('when_price')}</Text>
                     <InputNumber
@@ -111,7 +111,12 @@ const AddTokenAlertScreen = (props: AddTokenAlertScreenProps) => {
             </View>
 
             <View style={styles.btnBottom}>
-                <Button title={t('set_price')} onPress={handleAddAlertToken} />
+                <GradientButton
+                    title={t('set_price')}
+                    customStyles={styles.btnBottom}
+                    customTextStyles={styles.textAlert}
+                    onPress={handleAddAlertToken}
+                />
             </View>
         </TouchableOpacity>
     )
@@ -132,14 +137,13 @@ const styles = StyleSheet.create({
         paddingVertical: scales(8),
         paddingHorizontal: scales(32),
         borderRadius: scales(5),
-        backgroundColor: Colors.color_199744,
         marginTop: scales(24),
         marginBottom: Sizes.screenHeight * 0.1,
     },
     textAlert: {
         ...Fonts.w500,
         fontSize: scales(14),
-        color: Colors.color_E9EAEC,
+        color: Colors.color_FFFFFF,
     },
     content: {
         flex: 1,

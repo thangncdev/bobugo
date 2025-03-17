@@ -19,6 +19,7 @@ import ListSearchScene from 'modules/alerts/views/ListSearchScene';
 import { TokensType } from 'modules/markets/src/constants';
 import { getMainAndSubRoutes, getMarketRoutes } from 'modules/markets/src/utils';
 import { RootNavigatorParamList } from 'modules/navigation/typings';
+import LinearGradient from 'react-native-linear-gradient';
 import { Colors, Fonts } from 'themes';
 import scales from 'utils/scales';
 
@@ -68,15 +69,20 @@ const AddPriceAlertsScreen = (props: RouteProps) => {
                 const indexRoute = getIndexOf(mainRoute.key);
                 const isFocus = indexRoute === index;
                 return (
-                    <TouchableOpacity
-                        key={key}
-                        onPress={() => setIndex(indexRoute)}
-                        style={[
-                            styles.mainRoute,
-                            { backgroundColor: isFocus ? Colors.color_199744 : Colors.transparent },
-                        ]}>
-                        <Text style={styles.route}>{mainRoute.label}</Text>
-                    </TouchableOpacity>
+                    <LinearGradient
+                        colors={isFocus ? [Colors.color_4FE54D, Colors.color_1CB21A] : [Colors.transparent, Colors.transparent]}
+                        start={{ x: 0, y: 0 }}
+                        end={{ x: 0, y: 1 }}
+                        locations={[0.36, 0.96]}
+                        style={[styles.mainRoute]}
+                    >
+                        <TouchableOpacity
+                            key={key}
+                            onPress={() => setIndex(indexRoute)}
+                        >
+                            <Text style={styles.route}>{mainRoute.label}</Text>
+                        </TouchableOpacity>
+                    </LinearGradient>
                 );
             })}
         </View>

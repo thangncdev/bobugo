@@ -36,13 +36,20 @@ const MarketTabBar = (props: MarketTabBarProps) => {
                 const isFocus = indexRoute === index || (key === TokensType.TOKEN && isTokens) || (key === TokensType.NFT && isNfts);
 
                 return (
-                    <TouchableOpacity
-                        key={key}
-                        onPress={() => setIndex(indexRoute)}
-                        style={[styles.mainRoute, { backgroundColor: isFocus ? Colors.color_199744 : Colors.transparent }]}
+                    <LinearGradient
+                        colors={isFocus ? [Colors.color_4FE54D, Colors.color_1CB21A] : [Colors.transparent, Colors.transparent]}
+                        start={{ x: 0, y: 0 }}
+                        end={{ x: 0, y: 1 }}
+                        locations={[0.36, 0.96]}
+                        style={[styles.mainRoute]}
                     >
-                        <Text style={styles.route}>{mainRoute.label}</Text>
-                    </TouchableOpacity>
+                        <TouchableOpacity
+                            key={key}
+                            onPress={() => setIndex(indexRoute)}
+                        >
+                            <Text style={styles.route}>{mainRoute.label}</Text>
+                        </TouchableOpacity>
+                    </LinearGradient>
                 )
             })}
         </View>
@@ -102,7 +109,7 @@ export default React.memo(MarketTabBar, (prev, next) => {
 
 const styles = StyleSheet.create({
     container: {
-        height: scales(44),
+        marginVertical: scales(8),
         backgroundColor: Colors.color_FFFFFF,
         paddingHorizontal: scales(16),
         flexDirection: 'row',

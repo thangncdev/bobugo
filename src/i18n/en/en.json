@@ -24,5 +24,5 @@
   "no_data": "No data",
   "dont_allow": "Don’t Allow",
   "ok": "Ok",
-  "would_like": "Bobugo would like to Access the Camera"
+  "would_like": "This feature requires camera access to scan QR codes. You can enable camera permission in Settings"
 }

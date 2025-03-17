@@ -5,7 +5,7 @@ import { Keyboard, KeyboardAvoidingView, StyleSheet, Text, TextInput, View } fro
 import { connect } from 'react-redux';
 
 import { TouchableOpacity } from 'components/base';
-import Button from 'components/button/Button';
+import GradientButton from 'components/button/GradientButton';
 import Header from 'components/header/Header';
 import InputNumber from 'components/input/InputNumber';
 import { useSetting } from 'contexts/SettingProvider';
@@ -109,7 +109,7 @@ const EditTokenAlertScreen = (props: EditTokenAlertScreenProps) => {
             </View>
 
             <View style={styles.btnBottom}>
-                <Button title={t('set_price')} onPress={handleAddAlertToken} />
+                <GradientButton title={t('set_price')} onPress={handleAddAlertToken} />
             </View>
         </TouchableOpacity>
     );

@@ -30,6 +30,8 @@ const Colors = {
     color_4A71F5: '#4A71F5',
     color_17C585: '#17C585',
     color_F5B87F: '#F5B87F',
+    color_4FE54D: '#4FE54D',
+    color_1CB21A: '#1CB21A',
 };
 
 export default Colors;

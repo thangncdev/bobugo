@@ -258,6 +258,8 @@ const styles = StyleSheet.create({
         flexDirection: 'column',
         padding: scales(16),
         justifyContent: 'space-between',
+        borderColor: Colors.color_A2A4AA,
+        borderWidth: 0.5,
     },
     textDay: {
         ...Fonts.w400,

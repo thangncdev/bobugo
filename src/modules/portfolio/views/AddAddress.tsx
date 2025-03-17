@@ -7,6 +7,7 @@ import { connect } from 'react-redux';
 import Svgs from 'assets/svgs';
 import { TouchableOpacity } from 'components/base';
 import Button from 'components/button/Button';
+import GradientButton from 'components/button/GradientButton';
 import Header from 'components/header/Header';
 import Input from 'components/input/Input';
 import { useSetting } from 'contexts/SettingProvider';
@@ -107,7 +108,7 @@ const AddAddressScreen = (props: DispatchProps) => {
     const renderIconScan = () => <Svgs.IcQR style={styles.iconScan} width={scales(24)} height={scales(24)} />;
 
     const renderButtonContinue = () => (
-        <Button title={t('continue')} customStyles={styles.buttonContinue} onPress={handleAddPortfolio} />
+        <GradientButton title={t('continue')} customStyles={styles.buttonContinue} onPress={handleAddPortfolio} />
     );
 
     const viewOr = () => (
